@@ -142,7 +142,7 @@
             <div class="card">
                 <h2>Employee Details</h2>
                 <div class="form-group">
-                    <label for="TextBox1">User ID:</label>
+                    <label for="TextBox1">Employee ID:</label>
                     <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" />
                 </div>
                 <div class="form-group">

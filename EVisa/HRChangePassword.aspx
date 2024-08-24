@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EmployeeChangePassword.aspx.cs" Inherits="EVisa.EmployeeChangePassword" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="HRChangePassword.aspx.cs" Inherits="EVisa.HRChangePassword" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +26,7 @@
             border-radius: 12px; /* Rounded corners */
             box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Soft shadow */
             padding: 30px;
-            width: 90%;
+            width: 100%;
             width: 500px;
         }
 
@@ -82,7 +82,7 @@
                 <asp:Label ID="lblTitle" runat="server" CssClass="title" Text="Change Password"></asp:Label>
             </div>
             <div class="form-group">
-                <asp:Label ID="lblUserID" runat="server" Text="Employee ID:" AssociatedControlID="TextBox1"></asp:Label>
+                <asp:Label ID="lblUserID" runat="server" Text="User ID:" AssociatedControlID="TextBox1"></asp:Label>
                 <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" />
             </div>
             <div class="form-group">
@@ -111,3 +111,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

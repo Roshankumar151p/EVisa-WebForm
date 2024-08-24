@@ -17,11 +17,11 @@ namespace EVisa
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text;
+            string HRID = txtHRID.Text;
             string password = txtPassword.Text;
             SqlConnection con = new SqlConnection("uid=sa;password=manager@123;database=EVisa;server=C927QV3\\SQLEXPRESS");
             con.Open();
-            SqlCommand cmd = new SqlCommand("select * from hrinfo where username='" + username + "' and password ='" + password + "'", con);
+            SqlCommand cmd = new SqlCommand("select * from hrinfo where HRID='" + HRID + "' and password ='" + password + "'", con);
             SqlDataReader reader = cmd.ExecuteReader();
             if (reader.Read())
             {

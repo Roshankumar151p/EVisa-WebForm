@@ -11,26 +11,26 @@ namespace EVisa
 {
 
 
-    public partial class EditEmployee
+    public partial class EditHR
     {
 
         /// <summary>
-        /// editEmployeeForm control.
+        /// editHRForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm editEmployeeForm;
+        protected global::System.Web.UI.HtmlControls.HtmlForm editHRForm;
 
         /// <summary>
-        /// TextBoxEmployeeID control.
+        /// TextBoxHRID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxEmployeeID;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxHRID;
 
         /// <summary>
         /// btnSearch control.
@@ -51,22 +51,22 @@ namespace EVisa
         protected global::System.Web.UI.WebControls.Panel panelEditForm;
 
         /// <summary>
-        /// TextBoxUsername control.
+        /// TextBoxHRName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxUsername;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxHRName;
 
         /// <summary>
-        /// TextBoxRole control.
+        /// TextBoxHRRole control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxRole;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxHRRole;
 
         /// <summary>
         /// TextBoxManager control.

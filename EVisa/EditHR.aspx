@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditEmployee.aspx.cs" Inherits="EVisa.EditEmployee" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditHR.aspx.cs" Inherits="EVisa.EditHR" %>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Employee</title>
+    <title>Edit HR</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
     <style>
         body {
@@ -100,7 +100,7 @@
             font-size: 18px;
         }
 
-        #editEmployeeForm {
+        #editHRForm {
             width: 100%;
             max-width: 1000px;
             margin: 0 auto;
@@ -119,27 +119,27 @@
 </head>
 <body>
     <div class="header">
-        <div class="title">Edit Employee</div>
+        <div class="title">Edit HR</div>
     </div>
-    <form id="editEmployeeForm" runat="server">
+    <form id="editHRForm" runat="server">
         <div class="card-container">
             <div class="card">
-                <h2>Edit Employee Details</h2>
+                <h2>Edit HR Details</h2>
                 <div class="form-group">
-                    <label for="TextBoxEmployeeID">Employee ID:</label>
-                    <asp:TextBox ID="TextBoxEmployeeID" runat="server" CssClass="form-control" />
+                    <label for="TextBoxHRID">HR ID:</label>
+                    <asp:TextBox ID="TextBoxHRID" runat="server" CssClass="form-control" />
                 </div>
                 <div class="form-group">
                     <asp:Button ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click" CssClass="form-control" />
                 </div>
                 <asp:Panel ID="panelEditForm" runat="server" CssClass="card" Visible="false">
                     <div class="form-group">
-                        <label for="TextBoxUsername">Username:</label>
-                        <asp:TextBox ID="TextBoxUsername" runat="server" CssClass="form-control" />
+                        <label for="TextBoxHRName">HR Name:</label>
+                        <asp:TextBox ID="TextBoxHRName" runat="server" CssClass="form-control" />
                     </div>
                     <div class="form-group">
-                        <label for="TextBoxRole">Role:</label>
-                        <asp:TextBox ID="TextBoxRole" runat="server" CssClass="form-control" />
+                        <label for="TextBoxHRRole">Role:</label>
+                        <asp:TextBox ID="TextBoxHRRole" runat="server" CssClass="form-control" />
                     </div>
                     <div class="form-group">
                         <label for="TextBoxManager">Manager:</label>
@@ -162,7 +162,7 @@
                         <asp:TextBox ID="TextBoxEmail" runat="server" CssClass="form-control" TextMode="Email" />
                     </div>
                     <div class="form-group">
-                        <asp:Button ID="btnUpdate" runat="server" Text="Update Employee" OnClick="btnUpdate_Click" CssClass="form-control" />
+                        <asp:Button ID="btnUpdate" runat="server" Text="Update HR" OnClick="btnUpdate_Click" CssClass="form-control" />
                     </div>
                     <div class="message">
                         <asp:Label ID="lblMessage" runat="server" />
@@ -173,3 +173,4 @@
     </form>
 </body>
 </html>
+

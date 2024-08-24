@@ -18,9 +18,9 @@ namespace EVisa
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-            string userId = TextBoxUserID.Text.Trim();
+            string employeeid = TextBoxUserID.Text.Trim();
 
-            if (string.IsNullOrEmpty(userId))
+            if (string.IsNullOrEmpty(employeeid))
             {
                 lblMessage.Text = "Please enter a User ID.";
                 lblMessage.ForeColor = System.Drawing.Color.Red;
@@ -29,7 +29,7 @@ namespace EVisa
             }
 
             string connectionString = "uid=sa; password=manager@123; database=EVisa; server=C927QV3\\SQLEXPRESS";
-            string query = "SELECT * FROM employeefullinfo WHERE userid = @UserId";
+            string query = "SELECT * FROM employeefullinfo WHERE employeeid = @employeeid";
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -37,7 +37,7 @@ namespace EVisa
                 {
                     con.Open();
                     SqlCommand cmd = new SqlCommand(query, con);
-                    cmd.Parameters.AddWithValue("@UserId", userId);
+                    cmd.Parameters.AddWithValue("@employeeid", employeeid);
 
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();

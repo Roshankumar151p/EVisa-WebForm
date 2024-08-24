@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 
 namespace EVisa
 {
-    public partial class EmployeeChangePassword : System.Web.UI.Page
+    public partial class HRChangePassword : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -18,14 +18,9 @@ namespace EVisa
         protected void btnChangePassword_Click(object sender, EventArgs e)
         {
             string connectionString = "uid=sa; password=manager@123; database=EVisa; server=C927QV3\\SQLEXPRESS";
-            string userId = TextBox1.Text.Trim();
-            string oldPassword = TextBoxOldPassword.Text.Trim();
-            string newPassword = TextBox2.Text.Trim();
-
-            // Ensure inputs are sanitized to prevent SQL injection
-            userId = userId.Replace("'", "''");
-            oldPassword = oldPassword.Replace("'", "''");
-            newPassword = newPassword.Replace("'", "''");
+            string HRId = TextBox1.Text;
+            string oldPassword = TextBoxOldPassword.Text;
+            string newPassword = TextBox2.Text;
 
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -34,7 +29,7 @@ namespace EVisa
                     con.Open();
 
                     // Verify old password
-                    string checkPasswordQuery = $"SELECT COUNT(*) FROM employeeinfo WHERE userid = '{userId}' AND password = '{oldPassword}'";
+                    string checkPasswordQuery = "SELECT COUNT(*) FROM hrinfo WHERE hrid = '" + HRId + "' AND password = '" + oldPassword + "'";
                     using (SqlCommand checkCmd = new SqlCommand(checkPasswordQuery, con))
                     {
                         int userCount = (int)checkCmd.ExecuteScalar();
@@ -42,7 +37,7 @@ namespace EVisa
                         if (userCount == 1)
                         {
                             // Update with new password
-                            string updatePasswordQuery = $"UPDATE employeeinfo SET password = '{newPassword}' WHERE userid = '{userId}'";
+                            string updatePasswordQuery = "UPDATE hrinfo SET password = '" + newPassword + "' WHERE hrid = '" + HRId + "'";
                             using (SqlCommand updateCmd = new SqlCommand(updatePasswordQuery, con))
                             {
                                 int rowsAffected = updateCmd.ExecuteNonQuery();

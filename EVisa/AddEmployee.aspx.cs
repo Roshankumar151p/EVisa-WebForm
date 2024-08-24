@@ -24,7 +24,7 @@ namespace EVisa
                 con.Open();
 
                 // Insert into employeefullinfo table
-                string query1 = "INSERT INTO employeefullinfo (userid, username, role, manager, hiredate, salary, address, email) VALUES ('" + TextBox1.Text + "', '" + TextBox2.Text + "', '" + TextBox3.Text + "', '" +
+                string query1 = "INSERT INTO employeefullinfo (employeeid, username, role, manager, hiredate, salary, address, email) VALUES ('" + TextBox1.Text + "', '" + TextBox2.Text + "', '" + TextBox3.Text + "', '" +
                                TextBox4.Text + "', '" + TextBox5.Text + "', " + TextBox6.Text + ", '" +
                                TextBox7.Text + "', '" + TextBox8.Text + "')";
 
@@ -32,7 +32,7 @@ namespace EVisa
                 cmd1.ExecuteNonQuery();
 
                 // Insert into hrinfo table
-                string query2 = "INSERT INTO employeeinfo (userid, password) VALUES ('" + TextBox1.Text + "', '" + TextBox9.Text + "')";
+                string query2 = "INSERT INTO employeeinfo (employeeid, password) VALUES ('" + TextBox1.Text + "', '" + TextBox9.Text + "')";
                 SqlCommand cmd2 = new SqlCommand(query2, con);
                 cmd2.ExecuteNonQuery();
 

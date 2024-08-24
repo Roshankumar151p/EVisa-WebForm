@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ViewEmployee.aspx.cs" Inherits="EVisa.ViewEmployee1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ViewHR.aspx.cs" Inherits="EVisa.ViewHR" %>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Employee</title>
+    <title>View HR</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
     <style>
         body {
@@ -49,11 +49,11 @@
             border-radius: 12px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
             width: 200%;
-            max-width: 920px; 
+            max-width: 1000px; /* Increase max width of card */
             padding: 20px;
             box-sizing: border-box;
             overflow: hidden;
-            
+            //width: 550px;
         }
 
         .form-group {
@@ -129,15 +129,15 @@
 </head>
 <body>
     <div class="header">
-        <div class="title">View Employee</div>
+        <div class="title">View HR</div>
     </div>
-    <form id="viewEmployeeForm" runat="server">
+    <form id="viewHRForm" runat="server">
         <div class="card-container">
             <div class="card">
-                <h2>Search for Employee</h2>
+                <h2>Search for HR</h2>
                 <div class="form-group">
-                    <label for="TextBoxUserID">Employee ID:</label>
-                    <asp:TextBox ID="TextBoxUserID" runat="server" CssClass="form-control" />
+                    <label for="TextBoxHRID">HR ID:</label>
+                    <asp:TextBox ID="TextBoxHRID" runat="server" CssClass="form-control" />
                 </div>
                 <div class="form-group">
                     <asp:Button ID="btnSearch" runat="server" Text="Search" OnClick="btnSearch_Click" CssClass="form-control" />
@@ -146,10 +146,10 @@
                     <asp:Label ID="lblMessage" runat="server" />
                 </div>
                 <asp:Panel ID="panelGridView" runat="server" CssClass="grid-container" Visible="false">
-                    <asp:GridView ID="GridViewEmployee" runat="server" CssClass="grid-view" AutoGenerateColumns="False">
+                    <asp:GridView ID="GridViewHR" runat="server" CssClass="grid-view" AutoGenerateColumns="False">
                         <Columns>
-                            <asp:BoundField DataField="employeeid" HeaderText="Employee ID" />
-                            <asp:BoundField DataField="username" HeaderText="Username" />
+                            <asp:BoundField DataField="HRID" HeaderText="HR ID" />
+                            <asp:BoundField DataField="username" HeaderText="HR Name" />
                             <asp:BoundField DataField="role" HeaderText="Role" />
                             <asp:BoundField DataField="manager" HeaderText="Manager" />
                             <asp:BoundField DataField="hiredate" HeaderText="Hire Date" DataFormatString="{0:yyyy-MM-dd}" />

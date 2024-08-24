@@ -13,9 +13,9 @@ namespace EVisa
 
         protected void btnDelete_Click(object sender, EventArgs e)
         {
-            string userId = TextBox1.Text.Trim();
+            string employeeId = TextBox1.Text.Trim();
 
-            if (!string.IsNullOrEmpty(userId))
+            if (!string.IsNullOrEmpty(employeeId))
             {
                 // Connection string
                 string connectionString = "uid=sa; password=manager@123; database=EVisa; server=C927QV3\\SQLEXPRESS";
@@ -23,7 +23,7 @@ namespace EVisa
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     // Query to check if the UserID exists
-                    string checkUserQuery = "SELECT COUNT(*) FROM employeefullinfo WHERE UserID = '" + userId + "'";
+                    string checkUserQuery = "SELECT COUNT(*) FROM employeefullinfo WHERE employeeId = '" + employeeId + "'";
 
                     using (SqlCommand checkCmd = new SqlCommand(checkUserQuery, conn))
                     {
@@ -36,7 +36,7 @@ namespace EVisa
                             // If the user exists, proceed with deletion
 
                             // Delete login details first
-                            string deleteLoginQuery = "DELETE FROM employeeinfo WHERE UserID = '" + userId + "'";
+                            string deleteLoginQuery = "DELETE FROM employeeinfo WHERE employeeId = '" + employeeId + "'";
 
                             using (SqlCommand deleteCmd = new SqlCommand(deleteLoginQuery, conn))
                             {
@@ -46,7 +46,7 @@ namespace EVisa
                             }
 
                             // Delete employee details
-                            string deleteEmployeeQuery = "DELETE FROM employeefullinfo WHERE UserID = '" + userId + "'";
+                            string deleteEmployeeQuery = "DELETE FROM employeefullinfo WHERE employeeId = '" + employeeId + "'";
 
                             using (SqlCommand deleteCmd = new SqlCommand(deleteEmployeeQuery, conn))
                             {

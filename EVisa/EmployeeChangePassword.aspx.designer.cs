@@ -51,6 +51,24 @@ namespace EVisa
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
 
         /// <summary>
+        /// lblOldPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblOldPassword;
+
+        /// <summary>
+        /// TextBoxOldPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxOldPassword;
+
+        /// <summary>
         /// lblNewPassword control.
         /// </summary>
         /// <remarks>

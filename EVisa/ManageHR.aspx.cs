@@ -14,21 +14,5 @@ namespace EVisa
 
         }
 
-        protected void btnViewHR_Click(object sender, EventArgs e)
-        {
-            string url;
-            url = "HRDetails.aspx?userid=" + TextBox1.Text;
-            Response.Redirect(url);
-        }
-
-        protected void btnInsertHR_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        protected void btnDeleteHR_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

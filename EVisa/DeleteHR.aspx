@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DeleteEmployee.aspx.cs" Inherits="EVisa.DeleteEmployee" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DeleteHR.aspx.cs" Inherits="EVisa.DeleteHR" %>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delete Employee</title>
+    <title>Delete HR</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
@@ -122,13 +122,13 @@
 <body>
     <form id="form1" runat="server">
         <div class="header">
-            <div class="title">Delete Employee</div>
+            <div class="title">Delete HR</div>
         </div>
         <div class="card-container">
             <div class="card">
                 <div class="form-group">
-                    <label for="TextBox1">Employee ID:</label>
-                    <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" />
+                    <label for="TextBoxHRID">HR ID:</label>
+                    <asp:TextBox ID="TextBoxHRID" runat="server" CssClass="form-control" />
                 </div>
                 <div class="button-group">
                     <asp:Button ID="btnDelete" runat="server" Text="Delete" OnClick="btnDelete_Click" CssClass="btn btn-custom btn-delete" />

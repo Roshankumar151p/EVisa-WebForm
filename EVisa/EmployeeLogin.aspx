@@ -92,8 +92,8 @@
         <div class="login-box">
             <h2>Employee Login</h2>
             <form id="loginForm" runat="server">
-                <asp:Label ID="lblUsername" runat="server" Text="UserId" AssociatedControlID="txtUserId" CssClass="form-label"></asp:Label>
-                <asp:TextBox ID="txtUserId" runat="server" CssClass="form-input"></asp:TextBox>
+                <asp:Label ID="lblEmployeeID" runat="server" Text="EmployeeId" AssociatedControlID="txtEmployeeId" CssClass="form-label">Employee ID</asp:Label>
+                <asp:TextBox ID="txtEmployeeId" runat="server" CssClass="form-input"></asp:TextBox>
                 
                 <asp:Label ID="lblPassword" runat="server" Text="Password" AssociatedControlID="txtPassword" CssClass="form-label"></asp:Label>
                 <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-input"></asp:TextBox>

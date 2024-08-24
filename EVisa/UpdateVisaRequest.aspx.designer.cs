@@ -11,62 +11,89 @@ namespace EVisa
 {
 
 
-    public partial class EmployeeLogin
+    public partial class UpdateVisaRequest
     {
 
         /// <summary>
-        /// loginForm control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm loginForm;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// lblEmployeeID control.
+        /// TextBoxVisaID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmployeeID;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxVisaID;
 
         /// <summary>
-        /// txtEmployeeId control.
+        /// ButtonFetch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmployeeId;
+        protected global::System.Web.UI.WebControls.Button ButtonFetch;
 
         /// <summary>
-        /// lblPassword control.
+        /// PanelDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPassword;
+        protected global::System.Web.UI.WebControls.Panel PanelDetails;
 
         /// <summary>
-        /// txtPassword control.
+        /// TextBoxEmployeeID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxEmployeeID;
 
         /// <summary>
-        /// btnLogin control.
+        /// TextBoxVisaType control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLogin;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxVisaType;
+
+        /// <summary>
+        /// TextBoxVisaExpiry control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBoxVisaExpiry;
+
+        /// <summary>
+        /// DropDownListRenewalRequested control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownListRenewalRequested;
+
+        /// <summary>
+        /// ButtonUpdate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonUpdate;
 
         /// <summary>
         /// lblMessage control.

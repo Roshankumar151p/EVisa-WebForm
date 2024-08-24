@@ -1,29 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace EVisa
 {
-    public partial class EditEmployee : System.Web.UI.Page
+    public partial class EditHR : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            // Any initialization code can go here
         }
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
-            string employeeID = TextBoxEmployeeID.Text.Trim();
+            string hrId = TextBoxHRID.Text.Trim();
 
-            if (!string.IsNullOrEmpty(employeeID))
+            if (!string.IsNullOrEmpty(hrId))
             {
-                // Replace with your connection string
                 string connectionString = "uid=sa; password=manager@123; database=EVisa; server=C927QV3\\SQLEXPRESS";
-                string query = "SELECT * FROM employeefullinfo WHERE employeeID = '" + employeeID + "'";
+                string query = "SELECT * FROM Hrfullinfo WHERE HRID = '" + hrId + "'";
 
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
@@ -34,8 +29,8 @@ namespace EVisa
 
                     if (reader.Read())
                     {
-                        TextBoxUsername.Text = reader["username"].ToString();
-                        TextBoxRole.Text = reader["role"].ToString();
+                        TextBoxHRName.Text = reader["username"].ToString();
+                        TextBoxHRRole.Text = reader["role"].ToString();
                         TextBoxManager.Text = reader["manager"].ToString();
                         TextBoxHireDate.Text = Convert.ToDateTime(reader["hiredate"]).ToString("yyyy-MM-dd");
                         TextBoxSalary.Text = reader["salary"].ToString();
@@ -46,7 +41,7 @@ namespace EVisa
                     }
                     else
                     {
-                        lblMessage.Text = "Employee not found.";
+                        lblMessage.Text = "HR not found.";
                         panelEditForm.Visible = false;
                     }
                 }
@@ -55,13 +50,19 @@ namespace EVisa
 
         protected void btnUpdate_Click(object sender, EventArgs e)
         {
-            string employeeID = TextBoxEmployeeID.Text.Trim();
+            string hrId = TextBoxHRID.Text.Trim();
+            string username = TextBoxHRName.Text.Trim();
+            string role = TextBoxHRRole.Text.Trim();
+            string manager = TextBoxManager.Text.Trim();
+            string hireDate = Convert.ToDateTime(TextBoxHireDate.Text).ToString("yyyy-MM-dd");
+            string salary = TextBoxSalary.Text.Trim();
+            string address = TextBoxAddress.Text.Trim();
+            string email = TextBoxEmail.Text.Trim();
 
-            if (!string.IsNullOrEmpty(employeeID))
+            if (!string.IsNullOrEmpty(hrId))
             {
-                // Replace with your connection string
                 string connectionString = "uid=sa; password=manager@123; database=EVisa; server=C927QV3\\SQLEXPRESS";
-                string query = "UPDATE employeefullinfo SET username = '" + TextBoxUsername.Text + "', role = '" + TextBoxRole.Text + "', manager = '" + TextBoxManager.Text + "', hiredate = '" + Convert.ToDateTime(TextBoxHireDate.Text).ToString("yyyy-MM-dd") + "', salary = " + Convert.ToDecimal(TextBoxSalary.Text) + ", address = '" + TextBoxAddress.Text + "', email = '" + TextBoxEmail.Text + "' WHERE employeeID = '" + employeeID + "'";
+                string query = "UPDATE Hrfullinfo SET username = '" + username + "', role = '" + role + "', manager = '" + manager + "', hiredate = '" + hireDate + "', salary = " + salary + ", address = '" + address + "', email = '" + email + "' WHERE HRID = '" + hrId + "'";
 
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
@@ -72,14 +73,14 @@ namespace EVisa
 
                     if (rowsAffected > 0)
                     {
-                        lblMessage.Text = "Employee details updated successfully.";
+                        lblMessage.Text = "HR details updated successfully.";
                     }
                     else
                     {
-                        lblMessage.Text = "Error updating employee details.";
+                        lblMessage.Text = "Error updating HR details.";
                     }
                 }
-         
-        }   }
+            }
+        }
     }
 }

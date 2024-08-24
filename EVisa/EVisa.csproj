@@ -103,6 +103,7 @@
     <Content Include="AddEmployee.aspx" />
     <Content Include="AddHR.aspx" />
     <Content Include="AdminLogin.aspx" />
+    <Content Include="ApplicantReport.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -124,19 +125,26 @@
     <Content Include="Default.aspx" />
     <Content Include="AdminPage.aspx" />
     <Content Include="DeleteEmployee.aspx" />
+    <Content Include="DeleteHR.aspx" />
     <Content Include="EditEmployee.aspx" />
+    <Content Include="EditHR.aspx" />
     <Content Include="EmployeeChangePassword.aspx" />
+    <Content Include="EmployeeFeedback.aspx" />
     <Content Include="EmployeeLogin.aspx" />
     <Content Include="EmployeePage.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Feedback.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="HRChangePassword.aspx" />
     <Content Include="HRDetails.aspx" />
+    <Content Include="HRFeedback.aspx" />
     <Content Include="HRLogin.aspx" />
     <Content Include="HRPage.aspx" />
+    <Content Include="InterviewReport.aspx" />
     <Content Include="ManageEmployee.aspx" />
     <Content Include="ManageHR.aspx" />
     <Content Include="PortalPage.aspx" />
+    <Content Include="ResultReport.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -194,8 +202,13 @@
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
     <Content Include="EmployeeDetails.aspx" />
+    <Content Include="UpdateOnsiteProject.aspx" />
+    <Content Include="UpdateVisaRequest.aspx" />
     <Content Include="ViewEmployee.aspx" />
+    <Content Include="ViewFeedback.aspx" />
+    <Content Include="ViewHR.aspx" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="VisaStatus.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -221,6 +234,13 @@
     </Compile>
     <Compile Include="AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicantReport.aspx.cs">
+      <DependentUpon>ApplicantReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicantReport.aspx.designer.cs">
+      <DependentUpon>ApplicantReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -259,6 +279,13 @@
     <Compile Include="DeleteEmployee.aspx.designer.cs">
       <DependentUpon>DeleteEmployee.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DeleteHR.aspx.cs">
+      <DependentUpon>DeleteHR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteHR.aspx.designer.cs">
+      <DependentUpon>DeleteHR.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EditEmployee.aspx.cs">
       <DependentUpon>EditEmployee.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -266,12 +293,26 @@
     <Compile Include="EditEmployee.aspx.designer.cs">
       <DependentUpon>EditEmployee.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EditHR.aspx.cs">
+      <DependentUpon>EditHR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditHR.aspx.designer.cs">
+      <DependentUpon>EditHR.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EmployeeChangePassword.aspx.cs">
       <DependentUpon>EmployeeChangePassword.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="EmployeeChangePassword.aspx.designer.cs">
       <DependentUpon>EmployeeChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeFeedback.aspx.cs">
+      <DependentUpon>EmployeeFeedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeFeedback.aspx.designer.cs">
+      <DependentUpon>EmployeeFeedback.aspx</DependentUpon>
     </Compile>
     <Compile Include="EmployeeLogin.aspx.cs">
       <DependentUpon>EmployeeLogin.aspx</DependentUpon>
@@ -297,12 +338,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="HRChangePassword.aspx.cs">
+      <DependentUpon>HRChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRChangePassword.aspx.designer.cs">
+      <DependentUpon>HRChangePassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HRDetails.aspx.cs">
       <DependentUpon>HRDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="HRDetails.aspx.designer.cs">
       <DependentUpon>HRDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRFeedback.aspx.cs">
+      <DependentUpon>HRFeedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRFeedback.aspx.designer.cs">
+      <DependentUpon>HRFeedback.aspx</DependentUpon>
     </Compile>
     <Compile Include="HRLogin.aspx.cs">
       <DependentUpon>HRLogin.aspx</DependentUpon>
@@ -317,6 +372,13 @@
     </Compile>
     <Compile Include="HRPage.aspx.designer.cs">
       <DependentUpon>HRPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InterviewReport.aspx.cs">
+      <DependentUpon>InterviewReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InterviewReport.aspx.designer.cs">
+      <DependentUpon>InterviewReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="ManageEmployee.aspx.cs">
       <DependentUpon>ManageEmployee.aspx</DependentUpon>
@@ -340,6 +402,13 @@
       <DependentUpon>PortalPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResultReport.aspx.cs">
+      <DependentUpon>ResultReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResultReport.aspx.designer.cs">
+      <DependentUpon>ResultReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -361,6 +430,20 @@
     <Compile Include="EmployeeDetails.aspx.designer.cs">
       <DependentUpon>EmployeeDetails.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UpdateOnsiteProject.aspx.cs">
+      <DependentUpon>UpdateOnsiteProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateOnsiteProject.aspx.designer.cs">
+      <DependentUpon>UpdateOnsiteProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateVisaRequest.aspx.cs">
+      <DependentUpon>UpdateVisaRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateVisaRequest.aspx.designer.cs">
+      <DependentUpon>UpdateVisaRequest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewEmployee.aspx.cs">
       <DependentUpon>ViewEmployee.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -368,12 +451,33 @@
     <Compile Include="ViewEmployee.aspx.designer.cs">
       <DependentUpon>ViewEmployee.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ViewFeedback.aspx.cs">
+      <DependentUpon>ViewFeedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewFeedback.aspx.designer.cs">
+      <DependentUpon>ViewFeedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHR.aspx.cs">
+      <DependentUpon>ViewHR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewHR.aspx.designer.cs">
+      <DependentUpon>ViewHR.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VisaStatus.aspx.cs">
+      <DependentUpon>VisaStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisaStatus.aspx.designer.cs">
+      <DependentUpon>VisaStatus.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
