@@ -97,12 +97,12 @@
             <div class="card-title">Update Visa Request</div>
             <div class="card-description">Update interview details and final results for visa requests.</div>
         </div>
-        <div class="card" onclick="window.location.href='Reporting.aspx'">
+        <div class="card" onclick="window.location.href='VisaStatus.aspx'">
             <div class="card-icon">📊</div>
             <div class="card-title">Reporting</div>
             <div class="card-description">View all visa reporting details.</div>
         </div>
-        <div class="card" onclick="window.location.href='ChangePassword.aspx'">
+        <div class="card" onclick="window.location.href='HRChangePassword.aspx'">
             <div class="card-icon">🔒</div>
             <div class="card-title">Change Password</div>
             <div class="card-description">Change your password anytime to keep your account secure.</div>

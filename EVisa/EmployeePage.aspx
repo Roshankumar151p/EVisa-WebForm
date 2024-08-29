@@ -82,7 +82,7 @@
         <asp:Label ID="lblTitle" runat="server" CssClass="title" Text="Employee Dashboard"></asp:Label>
     </div>
     <div class="portal-container">
-        <div class="card" onclick="window.location.href='OnsiteDetails.aspx'">
+        <div class="card" onclick="window.location.href='OnsiteReport.aspx'">
             <div class="card-icon">📅</div>
             <div class="card-title">Onsite Details</div>
             <div class="card-description">Check your next onsite schedule and view details such as source, destination, and period.</div>

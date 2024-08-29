@@ -126,7 +126,7 @@
             <div class="card-title">Onsite Report</div>
             <div class="card-description">View onsite reports and details entered by employees.</div>
         </div>
-        <div class="card" onclick="window.location.href='Feedback.aspx'">
+        <div class="card" onclick="window.location.href='ViewFeedback.aspx'">
             <div class="card-icon">💬</div>
             <div class="card-title">Feedback</div>
             <div class="card-description">View and manage feedback from employees and HR.</div>

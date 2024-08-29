@@ -143,6 +143,8 @@
     <Content Include="InterviewReport.aspx" />
     <Content Include="ManageEmployee.aspx" />
     <Content Include="ManageHR.aspx" />
+    <Content Include="NewVisaRequest.aspx" />
+    <Content Include="OnsiteReport.aspx" />
     <Content Include="PortalPage.aspx" />
     <Content Include="ResultReport.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -393,6 +395,20 @@
     </Compile>
     <Compile Include="ManageHR.aspx.designer.cs">
       <DependentUpon>ManageHR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewVisaRequest.aspx.cs">
+      <DependentUpon>NewVisaRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewVisaRequest.aspx.designer.cs">
+      <DependentUpon>NewVisaRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OnsiteReport.aspx.cs">
+      <DependentUpon>OnsiteReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OnsiteReport.aspx.designer.cs">
+      <DependentUpon>OnsiteReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="PortalPage.aspx.cs">
       <DependentUpon>PortalPage.aspx</DependentUpon>
